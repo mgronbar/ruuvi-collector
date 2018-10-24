@@ -1,0 +1,19 @@
+{
+  "name": "ruuvi-collector",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Marko",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "mathjs": "^5.2.0",
+    "node-fetch": "^2.2.0",
+    "node-ruuvitag": "^4.1.0"
+  },
+  "scripts": {
+    "deployPi": "scp index.js .env package.json pi@192.168.1.128:/home/pi/ruuvi"
+  },
+  "devDependencies": {
+    "serverless-sam": "^0.1.0"
+  }
+}
